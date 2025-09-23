@@ -37,7 +37,7 @@ export const myProjects = [
        {
         id: 5,
         name: "MongoDB",
-        path: "/assets/logos/MOngoDB.svg",
+        path: "/assets/logos/MongoDB.svg",
       },
       {
         id: 6,
@@ -67,12 +67,12 @@ export const myProjects = [
       {
         id: 1,
         name: "React.js",
-        path: "/assets/logos/react.svg",
+        path: "/assets/logos/React.svg",
       },
       {
         id: 2,
         name: "MongoDB",
-        path: "/assets/logos/MOngoDB.svg",
+        path: "/assets/logos/MongoDB.svg",
       },
       {
         id: 3,
