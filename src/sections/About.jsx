@@ -248,7 +248,7 @@ const About = () => {
             <p className="headtext">Stack & Skills</p>
             <p className="subtext">
               I specialize in a variety of languages, frameworks and tools that
-              allow me to build robus and scalable applications
+              allow me to build robust and scalable applications
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
