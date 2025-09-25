@@ -1,12 +1,65 @@
-# React + Vite
+# 💼 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Banner](./images/banner.png) <!-- Optional banner image -->
 
-Currently, two official plugins are available:
+Hi! I’m **Somiya Rana**, a passionate **MERN Stack Developer** from Meerut, India. This is my personal portfolio, showcasing my skills, projects, and experience.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
+Check out my portfolio here: [**My Portfolio Live**](https://my-beautiful-portfolio-phi.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 About This Project
+This project is a **personal portfolio website** built to demonstrate:
+- Skills in **React, Tailwind CSS**  
+- Responsive and interactive **frontend design**  
+
+
+It includes sections for:
+- **About Me**  
+- **Home**  
+- **Projects**  
+- **Contact**  
+
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** React, Tailwind CSS
+- **Hosting / Deployment:** Vercel  
+
+
+---
+
+## 💻 Features
+- Fully **responsive** design for all devices  
+- Interactive **project showcase** with live links  
+- **Contact form** integrated for direct communication  
+- Clean and **modern UI/UX**  
+
+---
+
+## 📸 Screenshots
+<!-- Add screenshots inside `images` folder -->
+![Home](./images/home.png)
+![Projects](./images/projects.png)
+![Contact](./images/contact.png)
+
+---
+
+## 🌐 Connect with Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/somiya-rana-b35152255/)  
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SomiyaRana)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:somyarana819@gmail.com)
+
+---
+
+## 📌 Contact
+- 📍 Meerut, Uttar Pradesh, India  
+- 📧 Email: somyarana819@gmail.com  
+- 📱 Phone: +91 9634606128  
+
+---
+
+**“Code is like humor. When you have to explain it, it's bad.” – Cory House**
