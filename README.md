@@ -43,6 +43,7 @@ It includes sections for:
 ## 📸 Screenshots
 <!-- Add screenshots inside `images` folder -->
 ![About Me ](About.png)
+![About](About.png)
 ![Projects](Projects.png)
 ![Contact](Contact.png)
 
