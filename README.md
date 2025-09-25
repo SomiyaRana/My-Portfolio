@@ -1,6 +1,6 @@
 # 💼 My Portfolio
 
-![Portfolio Banner](./images/banner.png) <!-- Optional banner image -->
+![Portfolio Banner](./banner.png) <!-- Optional banner image -->
 
 Hi! I’m **Somiya Rana**, a passionate **MERN Stack Developer** from Meerut, India. This is my personal portfolio, showcasing my skills, projects, and experience.  
 
