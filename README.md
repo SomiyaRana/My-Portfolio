@@ -42,9 +42,9 @@ It includes sections for:
 
 ## 📸 Screenshots
 <!-- Add screenshots inside `images` folder -->
-![Home](./images/home.png)
-![Projects](./images/projects.png)
-![Contact](./images/contact.png)
+![About Me ](About.png)
+![Projects](Projects.png)
+![Contact](.Contact.png)
 
 ---
 
