@@ -44,7 +44,7 @@ It includes sections for:
 <!-- Add screenshots inside `images` folder -->
 ![About Me ](About.png)
 ![Projects](Projects.png)
-![Contact](.Contact.png)
+![Contact](Contact.png)
 
 ---
 
