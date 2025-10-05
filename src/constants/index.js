@@ -10,7 +10,7 @@ export const myProjects = [
       "🎨 Theme customization for a personalized chat experience",
       "👤 Profile updates with online/offline status indicators (green dot for active users) powered by Socket.io and JWT authentication",
     ],
-    href: "",
+    href: "https://pingpoint.onrender.com/signup",
     logo: "",
     image: "/projects/signup-demo.png",
     tags: [
@@ -59,7 +59,7 @@ export const myProjects = [
       "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
       "Connected to a secure SQLite database for user data storage.",
     ],
-    href: "",
+    href: "https://e-commerce-lake-beta-22.vercel.app/",
     logo: "",
     image: "/projects/shopper.png",
     tags: [
