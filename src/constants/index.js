@@ -87,24 +87,73 @@ export const myProjects = [
     ],
   },
 
+
+
+  
+  {
+    id: 3,
+title: "Prescripto - Nearest Doctor Appointment Booking System",
+description:
+  "A full-stack MERN application that makes booking a doctor's appointment as easy as booking a cab, with real-time location-based search and role-based access.",
+subDescription: [
+  "⚛️ Developed a React frontend with Tailwind CSS, enabling patients to log in, search doctors, and book appointments.",
+  "🔐 Implemented JWT-based secure authentication and role-based access for patients, doctors, and admins.",
+  "🛠️ Built RESTful APIs using Node.js and Express for authentication, scheduling, and appointment booking.",
+  "🗄️ Integrated MongoDB with Mongoose to store patient, doctor, and appointment details.",
+  "⏰ Added conflict-checking logic to prevent doctors from being double booked at the same time.",
+  "📍 Implemented GeoSpatial queries in MongoDB to find the nearest doctors within a given radius.",
+  "🧑‍⚕️ Designed admin features for managing doctors and patients efficiently.",
+],
+
+    href: "",
+    logo: "",
+    image: "/projects/Prescripto.png",
+    tags: [
+   
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/logos/React.svg",
+      },
+      {
+        id: 2,
+        name: "MongoDB",
+        path: "/assets/logos/MongoDB.svg",
+      },
+      {
+        id: 3,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+       {
+        id: 4,
+        name: "Node.js",
+        path: "/assets/logos/Node.js.svg",
+      },
+       {
+        id: 5,
+        name: "Google Maps APIs",
+        path: "/assets/logos/google-maps-platform-svgrepo-com.svg",
+      },
+    ],
+  },
 ];
 
 export const mySocials = [
   {
-    name: "WhatsApp",
+    name: "Github",
     href: "",
-    icon: "/socials/whatsApp.svg",
+    icon: "/assets/logos/github.svg",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/somiya-rana-b35152255/",
     icon: "/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/som.yayaya/",
     icon: "/socials/instagram.svg",
   },
 ];
 
-//

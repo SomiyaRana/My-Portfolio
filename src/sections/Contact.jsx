@@ -123,7 +123,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-gray-600 to-gray-950 hover-animation"
+            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-gray-600 to-gray-600 hover-animation"
           >
             {!isLoading ? "Send" : "Sending..."}
           </button>
