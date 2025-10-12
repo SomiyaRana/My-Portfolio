@@ -105,7 +105,7 @@ import Card from "../components/Card";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks.jsx";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 const About = () => {
   const tiltRef1 = useTilt();
   const tiltRef2 = useTilt();
@@ -178,38 +178,38 @@ const About = () => {
 
             {/* <Card style={{ rotate: "30deg", top: "70%", left: "70%" }} image="/assets/logos/React.svg" containerRef={grid2Container} /> */}
             {/* <Card style={{ rotate: "-35deg", top: "70%", left: "25%" }} image="/assets/logos/tailwindcss.svg" containerRef={grid2Container} /> */}
-            <Card
+            {/* <Card
               style={{ rotate: "-35deg", top: "5%", left: "10%" }}
               image="/assets/logos/git.svg"
               containerRef={grid2Container}
-            />
+            /> */}
 
             {/* <Card style={{ rotate: "-15deg", top: "15%", left: "5%" }} image="/assets/logos/Node.js.svg" containerRef={grid2Container} /> */}
             {/* <Card style={{ rotate: "25deg", top: "20%", left: "75%" }} image="/assets/logos/aws_icon_146074.svg" containerRef={grid2Container} /> */}
-            <Card
+            {/* <Card
               style={{ rotate: "-20deg", top: "75%", left: "10%" }}
               image="/assets/logos/visualstudiocode.svg"
               containerRef={grid2Container}
-            />
+            /> */}
             {/* <Card style={{ rotate: "15deg", top: "40%", left: "80%" }} image="/assets/logos/javascript.svg" containerRef={grid2Container} /> */}
             {/* <Card style={{ rotate: "-10deg", top: "5%", left: "50%" }} image="/assets/logos/html5.svg" containerRef={grid2Container} /> */}
-            <Card
+            {/* <Card
               style={{ rotate: "10deg", top: "50%", left: "30%" }}
               image="/assets/logos/java-svgrepo-com.svg"
               containerRef={grid2Container}
-            />
-            <Card
+            /> */}
+            {/* <Card
               style={{ rotate: "-25deg", top: "35%", left: "15%" }}
               image="/assets/logos/python-svgrepo-com.svg"
               containerRef={grid2Container}
-            />
+            /> */}
             {/* <Card style={{ rotate: "20deg", top: "65%", left: "55%" }} image="/assets/logos/MySQL.svg" containerRef={grid2Container} /> */}
             {/* <Card style={{ rotate: "-15deg", top: "50%", left: "5%" }} image="/logos/postgressql.svg" containerRef={grid2Container} /> */}
-            <Card
+            {/* <Card
               style={{ rotate: "30deg", top: "80%", left: "40%" }}
               image="/assets/logos/github.svg"
               containerRef={grid2Container}
-            />
+            /> */}
             {/* <Card style={{ rotate: "-20deg", top: "25%", left: "60%" }} image="/assets/logos/Express.svg" containerRef={grid2Container} /> */}
             {/* <Card style={{ rotate: "15deg", top: "10%", left: "85%" }} image="/logos/css3.svg" containerRef={grid2Container} /> */}
             {/* <Card style={{ rotate: "-15deg", top: "70%", left: "50%" }} image="/assets/logos/microsoft.svg" containerRef={grid2Container} /> */}
