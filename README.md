@@ -6,7 +6,7 @@ Hi! I’m **Somiya Rana**, a passionate **MERN Stack Developer** from Meerut, In
 ---
 
 ## 🌐 Live Demo
-Check out my portfolio here: [**My Portfolio Live**](https://my-beautiful-portfolio-phi.vercel.app/)
+Check out my portfolio here: [**My Portfolio Live**](https://somiya911.vercel.app/)
 
 ---
 
