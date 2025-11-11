@@ -38,14 +38,6 @@ It includes sections for:
 - **Contact form** integrated for direct communication  
 - Clean and **modern UI/UX**  
 
----
-
-## 📸 Screenshots
-<!-- Add screenshots inside `images` folder -->
-![About Me ](About.png)
-![About](Aboutt.png)
-![Projects](Projects.png)
-![Contact](Contact.png)
 
 ---
 

@@ -6,6 +6,7 @@ import { Frameworks } from "../components/Frameworks.jsx";
 import { Particles } from "../components/Particles";
 import { motion } from "framer-motion";
 
+
 const containerVariants = {
   animate: {
     transition: {
@@ -189,6 +190,7 @@ const About = () => {
               text="UI/UX"
               containerRef={grid2Container}
             />
+   
           </div>
         </motion.div>
 
