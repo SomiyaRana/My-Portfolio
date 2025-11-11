@@ -125,6 +125,7 @@ const About = () => {
                   alt="LinkedIn"
                   className="w-6 h-6 group-hover:scale-105 transition-transform"
                 />
+                
                 <span className="text-lg ">SomiyaRana</span>
                 <span className="ml-auto text-gray group-hover:text-blue-400">
                   ↗
