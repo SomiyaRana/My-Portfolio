@@ -1,4 +1,4 @@
-import { Canvas, useFrame } from "@react-three/fiber";
+ import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
 import ParallelxBackground from "../components/ParallelxBackground";
 import { Astronaut } from "../components/Astronaut";
@@ -25,10 +25,11 @@ const Hero = () => {
                 scale={isMobile && 0.23}
                 position={isMobile && [0, -1.5, 0]}
               />
+            
             </Float>
-            
+
             <Rig />
-            
+
           </Suspense>
           <OrbitControls enableZoom={false} enablePan={false} />
 
@@ -50,3 +51,4 @@ function Rig() {
 }
 
 export default Hero;
+

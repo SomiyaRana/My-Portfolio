@@ -31,7 +31,7 @@ const variants = {
            variants = {variants}
         initial="hidden"
         animate="visible"
-        transition={{delay:1.5}}>
+        transition={{delay:1.2}}>
             <FlipWords
               words={words}
               className="font-black text-white text-8xl"
@@ -42,7 +42,7 @@ const variants = {
            variants = {variants}
         initial="hidden"
         animate="visible"
-        transition={{delay:1.8}}>Web Experiences</motion.p>
+        transition={{delay:1.3}}>Web Experiences</motion.p>
         </div>
       </div>
 

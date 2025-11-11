@@ -4,7 +4,8 @@ import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
-// import  LogoSection from "./sections/LogoSection"
+// import LogoSection from "./sections/LogoSection"
+
 function App() {
   return (
     <div className="container mx-auto max-w-7xl">

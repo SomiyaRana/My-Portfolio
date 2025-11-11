@@ -137,12 +137,51 @@ subDescription: [
       },
     ],
   },
+
+
+
+  {
+    id: 1,
+    title: "My Portfolio",
+    description:
+      "A modern real-time chat application built with the MERN stack, providing secure, fast, and customizable communication with an elegant UI powered by TailwindCSS and DaisyUI.",
+    subDescription: [
+      "💬 Instant messaging with Socket.io for seamless real-time conversations",
+      "🖼️ Photo sharing with Cloudinary integration for reliable image storage and delivery",
+      "🎨 Theme customization for a personalized chat experience",
+      "👤 Profile updates with online/offline status indicators (green dot for active users) powered by Socket.io and JWT authentication",
+    ],
+    href: "https://my-portfolio-umber-zeta-97.vercel.app/",
+    logo: "",
+    image: "/projects/portfolio-demo.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/logos/React.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "ThreeJS",
+        path: "/assets/logos/threejs.svg",
+      },
+    
+    ],
+  },
+
 ];
+
+
 
 export const mySocials = [
   {
     name: "Github",
-    href: "",
+    href: "https://github.com/SomiyaRana",
     icon: "/assets/logos/github.svg",
   },
   {

@@ -21,7 +21,7 @@ const ProjectDetails = ({
           onClick={closeModal}
           className="absolute p-2 rounded-sm top-5 right-5 bg-gray-400 hover:bg-gray-500 z-10"
         >
-          <img src="assets/close.svg" className="w-6 h-6" />
+          <img src="assets/close.png" className="w-6 h-6" />
         </button>
 
         {/* Image with limited height */}

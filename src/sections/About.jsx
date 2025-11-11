@@ -1,147 +1,161 @@
-// import React from "react";
-// import { useRef } from "react";
-// import Card from "../components/Card";
-// const About = () => {
-//   const grid2Container = useRef();
-//   return (
-//     <section className="c-space section-spacing">
-//       <h2 className="text-heading">About Me </h2>
-//       <div
-//         className="grid grid-cols-1 gap-4 md:grid-cols-6
-//        md:auto-rows-[18rem] mt-12"
-//       >
-//         {/* Grid 1 */}
-//         <div className="flex items-end grid-default-color grid-1">
-//           <img
-//             src="assets/coding-pov.png"
-//             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
-//           />
-//           <div className="z-10 ">
-//             <p className="headtext">I'm Somiya Rana</p>
-//             <p className="subtext">
-//               Aspiring Full Stack Developer passionate about building clean,
-//               scalable code and creating seamless user experiences through
-//               hands-on projects and learning.
-//             </p>
-//           </div>
-//           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
-//         </div>
-//         {/* Grid 2 */}
-
-//         <div className="grid-default-color  grid grid-2">
-//           <div
-//             ref={grid2Container}
-//             className="flex items-center justify-center w-full h-full"
-//           >
-//             <p className="flex items-end text-5xl text-gray-500">
-//               CODE IS CRAFT
-//             </p>
-//             <Card
-//               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-//               text="GRASP"
-//               containerRef={grid2Container}
-//             />
-//             <Card
-//               style={{ rotate: "30deg", top: "60%", left: "45%" }}
-//               text="SOLID"
-//               containerRef={grid2Container}
-//             />
-
-//             <Card
-//               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-//               text="Design Patterns"
-//               containerRef={grid2Container}
-//             />
-
-//             <Card
-//               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-//               text="Design Principles"
-//                containerRef={grid2Container}
-//             />
-
-//             <Card
-//               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-//               text="SRP"
-//            containerRef={grid2Container}
-//             />
-//             <Card
-//               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-//               image="/public/logos/React.svg"
-//                containerRef={grid2Container}
-//             />
-
-//             <Card
-//               style={{ rotate: "-35deg", top: "70%", left: "25%" }}
-//               image="/public/logos/tailwindcss.svg"
-//                containerRef={grid2Container}
-//             />
-
-//             <Card
-//               style={{ rotate: "-35deg", top: "5%", left: "10%" }}
-//               image="/public/logos/git.svg"
-//                containerRef={grid2Container}
-//             />
-//           </div>
-//         </div>
-//         {/* Grid 3 */}
-//         <div className="grid-black-color grid-3"></div>
-//         {/* Grid 4 */}
-//         <div className="grid-special-color grid-4"></div>
-//         {/* Grid 5 */}
-//         <div className="grid-default-color grid-5"></div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default About;
-
-
-import useTilt from "../utils/tilt.js";
 import { Globe } from "../components/Globe";
-import React from "react";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import Card from "../components/Card";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks.jsx";
+import { Particles } from "../components/Particles";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-const About = () => {
-  const tiltRef1 = useTilt();
-  const tiltRef2 = useTilt();
-  const tiltRef3 = useTilt();
-  const tiltRef4 = useTilt();
-  const tiltRef5 = useTilt();
 
+const containerVariants = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1, // Stagger delay between each card
+    },
+  },
+};
+
+const cardFromLeft = {
+  initial: { x: -100, opacity: 0 },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: { type: "spring", stiffness: 50, duration: 0.8 },
+  },
+};
+
+const cardFromRight = {
+  initial: { x: 100, opacity: 0 },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: { type: "spring", stiffness: 50, duration: 0.8 },
+  },
+};
+
+const About = () => {
+  const tiltRef1 = useRef();
+  const tiltRef2 = useRef();
+  const tiltRef3 = useRef();
+  const tiltRef4 = useRef();
+  const tiltRef5 = useRef();
   const grid2Container = useRef();
+
   return (
     <section id="about" className="c-space section-spacing">
       <h2 className="text-heading">About Me </h2>
-      <div
-        className="grid grid-cols-1 gap-4 md:grid-cols-6
-       md:auto-rows-[18rem] mt-12"
+
+      <motion.div
+        className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12"
+        variants={containerVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: false, // 👈 Ensures it can run again
+          amount: 0.1, // 👈 Lower amount makes it trigger faster
+          margin: "-100px 0px -100px 0px", // 👈 Forces the section to be 'out of view' when it's sufficiently off-screen
+        }} // Animation runs once when 20% visible
       >
-        {/* Grid 1 */}
-        <div
+        {/* Grid 1:  */}
+        <motion.div
           ref={tiltRef1}
-          className="flex items-end grid-default-color grid-1 tilt-hover"
+          className="grid-1 tilt-hover relative p-6 rounded-3xl overflow-hidden md:col-span-2 md:row-span-2"
+          variants={cardFromLeft}
         >
-          <img
-            src="assets/coding-pov.png"
-            className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
+          <Particles
+            className="absolute inset-0 -z-50"
+            quantity={100}
+            ease={80}
+            color={"#ffffff"}
+            refresh
           />
-          <div className="z-10 ">
-            <p className="headtext">I'm Somiya Rana</p>
-            <p className="subtext">
-              Aspiring Full Stack Developer passionate about building clean,
-              scalable code and creating seamless user experiences through
-              hands-on projects and learning.
+          <div className="flex items-start space-x-6">
+            <div className="relative flex-shrink-0">
+              <img
+                src="assets/aboutImage.png"
+                alt="Somiya Rana Avatar"
+                className="size-30 rounded-full object-cover border-4 border-gray-400 shadow-xl ring-2 ring-gray-500"
+              />
+            </div>
+
+            <div className="pt-4 flex-grow">
+              <p className="text-white text-sm font-semibold mb-4">
+                I'm a Full Stack Developer
+              </p>
+
+              <div className="grid grid-cols-1 gap-y-1 text-sm text-gray-400">
+                <div className="flex items-center space-x-2">
+                  <span role="img" aria-label="University">
+                    🎓
+                  </span>
+                  <span>Dr. A. P. J. Abdul Kalam Technical University</span>
+                  
+                </div>
+              
+              </div>
+             
+            </div>
+          </div>
+
+          <div className="mt-8 pt-4 border-t border-gray-700/50">
+            <p className="text-gray-100 text-sm mt-2">
+              Full Stack Developer creating seamless, scalable web applications
+              that elegantly merge design with functionality.
+            </p>
+
+            <p className="text-gray-100 text-sm mt-2">
+              Driven by a passion for clean code and crafting exceptional user
+              experiences.
             </p>
           </div>
-          <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
-        </div>
-        {/* Grid 2 */}
-        <div ref={tiltRef2} className="grid-black-color grid grid-2  ">
+
+          <div className="mt-4 pt-4 border-t border-gray-700/50">
+            <h3 className="text-gray-100 text-lg  mb-3">Connect with me</h3>{" "}
+            {/* Reduced mb-4 to mb-3 */}
+            <div className="space-y-3 mb-0">
+              {" "}
+              <a
+                href="https://www.linkedin.com/in/somiya-rana-b35152255/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-4 text-gray hover:text-blue-400 transition-colors duration-300 group"
+              >
+                <img
+                  src="socials/linkedIn.svg"
+                  alt="LinkedIn"
+                  className="w-6 h-6 group-hover:scale-105 transition-transform"
+                />
+                <span className="text-lg ">SomiyaRana</span>
+                <span className="ml-auto text-gray group-hover:text-blue-400">
+                  ↗
+                </span>
+              </a>
+              {/* GitHub Link */}
+              <a
+                href="https://github.com/SomiyaRana"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-4 text-white hover:text-purple-400 transition-colors duration-300 group"
+              >
+                <img
+                  src="assets/logos/github.svg"
+                  alt="GitHub"
+                  className="w-6 h-6 group-hover:scale-105 transition-transform"
+                />
+                <span className="text-lg">Somiya09</span>
+                <span className="ml-auto text-gray-00 group-hover:text-purple-400">
+                  ↗
+                </span>
+              </a>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Grid 2:  */}
+        <motion.div
+          ref={tiltRef2}
+          className="grid-black-color  grid-2"
+          variants={cardFromRight}
+        >
           <div
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full"
@@ -162,7 +176,7 @@ const About = () => {
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Design Patterns"
+              text="Design"
               containerRef={grid2Container}
             />
             <Card
@@ -175,75 +189,48 @@ const About = () => {
               text="UI/UX"
               containerRef={grid2Container}
             />
-
-            {/* <Card style={{ rotate: "30deg", top: "70%", left: "70%" }} image="/assets/logos/React.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "-35deg", top: "70%", left: "25%" }} image="/assets/logos/tailwindcss.svg" containerRef={grid2Container} /> */}
-            <Card
-              style={{ rotate: "-35deg", top: "5%", left: "10%" }}
-              image="/assets/logos/git.svg"
-              containerRef={grid2Container}
-            />
-
-            {/* <Card style={{ rotate: "-15deg", top: "15%", left: "5%" }} image="/assets/logos/Node.js.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "25deg", top: "20%", left: "75%" }} image="/assets/logos/aws_icon_146074.svg" containerRef={grid2Container} /> */}
-            <Card
-              style={{ rotate: "-20deg", top: "75%", left: "10%" }}
-              image="/assets/logos/visualstudiocode.svg"
-              containerRef={grid2Container}
-            />
-            {/* <Card style={{ rotate: "15deg", top: "40%", left: "80%" }} image="/assets/logos/javascript.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "-10deg", top: "5%", left: "50%" }} image="/assets/logos/html5.svg" containerRef={grid2Container} /> */}
-            <Card
-              style={{ rotate: "10deg", top: "50%", left: "30%" }}
-              image="/assets/logos/java-svgrepo-com.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-25deg", top: "35%", left: "15%" }}
-              image="/assets/logos/python-svgrepo-com.svg"
-              containerRef={grid2Container}
-            />
-            {/* <Card style={{ rotate: "20deg", top: "65%", left: "55%" }} image="/assets/logos/MySQL.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "-15deg", top: "50%", left: "5%" }} image="/logos/postgressql.svg" containerRef={grid2Container} /> */}
-            <Card
-              style={{ rotate: "30deg", top: "80%", left: "40%" }}
-              image="/assets/logos/github.svg"
-              containerRef={grid2Container}
-            />
-            {/* <Card style={{ rotate: "-20deg", top: "25%", left: "60%" }} image="/assets/logos/Express.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "15deg", top: "10%", left: "85%" }} image="/logos/css3.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "-15deg", top: "70%", left: "50%" }} image="/assets/logos/microsoft.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "25deg", top: "30%", left: "10%" }} image="/assets/logos/MongoDB.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "-25deg", top: "60%", left: "5%" }} image="/assets/logos/Socket.io.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "10deg", top: "20%", left: "90%" }} image="/assets/logos/threejs.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "-10deg", top: "15%", left: "40%" }} image="/assets/logos/azure.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "20deg", top: "5%", left: "30%" }} image="/logos/vitejs.svg" containerRef={grid2Container} /> */}
-            {/* <Card style={{ rotate: "-20deg", top: "85%", left: "60%" }} image="/logos/xml.svg" containerRef={grid2Container} /> */}
           </div>
-        </div>
-        {/* Grid 3 */}
-        <div ref={tiltRef3} className="grid-black-color grid-3 ">
+        </motion.div>
+
+        {/* Grid 3: */}
+        <motion.div
+          ref={tiltRef3}
+          className="grid-black-color grid-3 relative overflow-hidden" // 'relative' and 'overflow-hidden' for positioning and containing the glow
+          variants={cardFromRight}
+        >
+          {/* Original Content */}
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone </p>
             <p className="subtext">
-              I,m based in Mars, and open to work worldwide
+              I'm based in Mars, and open to work worldwide
             </p>
           </div>
-          <figure className="absolute left-[30%] top-[10%]">
+
+          <figure className="absolute left-[30%] top-[10%] z-0">
             <Globe />
           </figure>
-        </div>
-        {/* Grid 4 */}
-        <div ref={tiltRef4} className="grid-black-color grid-4 ">
+        </motion.div>
+
+        {/* Grid 4: */}
+        <motion.div
+          ref={tiltRef4}
+          className="grid-black-color grid-4 "
+          variants={cardFromLeft}
+        >
           <div className="flex flex-col items-center justify-center gap-4 size-full">
             <p className="text-center headtext">
               Do you want to start the project together?
             </p>
             <CopyEmailButton />
           </div>
-        </div>
-        {/* Grid 5 */}
-        <div ref={tiltRef5} className="grid-black-color grid-5 ">
+        </motion.div>
+
+        {/* Grid 5: */}
+        <motion.div
+          ref={tiltRef5}
+          className="grid-black-color grid-5 "
+          variants={cardFromRight}
+        >
           <div className="z-10 w-[50%] ">
             <p className="headtext">Stack & Skills</p>
             <p className="subtext">
@@ -254,8 +241,8 @@ const About = () => {
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
             <Frameworks />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
