@@ -1,8 +1,9 @@
 // import { useState } from "react";
 import Project from "../components/Project";
 import { myProjects } from "../constants";
+import { useState } from "react";
 import { motion, useMotionValue } from "framer-motion"; // Ensure you import from 'framer-motion'
-
+import { useSpring } from "framer-motion";
 // 1. Define the variants for a single item coming from the left
 const cardFromLeft = {
   initial: { x: -100, opacity: 0 },
@@ -26,15 +27,15 @@ const Projects = () => {
   // ... (Hooks and Handlers remain the same) ...
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  // const springX = useSpring(x, { damping: 10, stiffness: 50 });
-  // const springY = useSpring(y, { damping: 10, stiffness: 50 });
+  const springX = useSpring(x, { damping: 10, stiffness: 50 });
+  const springY = useSpring(y, { damping: 10, stiffness: 50 });
   
   const handleMouseMove = (e) => {
     x.set(e.clientX + 20);
     y.set(e.clientY + 20);
   };
   
-  // const [preview, setPreview] = useState(null);
+  const [preview, setPreview] = useState(null);
 
   return (
     <section 
@@ -57,12 +58,12 @@ const Projects = () => {
       >
         {myProjects.map((project) => (
           <motion.div key={project.id} variants={cardFromLeft}>
-            {/* <Project {...project} setPreview={setPreview} /> */}
-            <Project {...project}/>
+            <Project {...project} setPreview={setPreview} />
+            {/* <Project {...project}/> */}
           </motion.div>
         ))}
       </motion.div>
-{/* 
+
       {preview && (
         <motion.img
           className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg shadow-lg pointer-events-none w-80"
@@ -70,7 +71,7 @@ const Projects = () => {
           style={{ x: springX, y: springY }}
         />
       )}
-       */}
+      
     </section>
   );
 };

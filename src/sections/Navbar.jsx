@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
             href="/"
-            className="text-xl font-bold transition-colors text-neutral-500 hover:text-white"
+            className="text-2xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
             Somiya
           </a>
