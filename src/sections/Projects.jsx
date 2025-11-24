@@ -120,21 +120,7 @@ const Projects = () => {
     }
   };
 
-  // LOOPING PREVIOUS SCROLL
-  const scrollPrev = () => {
-    if (!scrollRef.current) return;
 
-    const scroller = scrollRef.current;
-    const cardWidth = scrollAmount();
-    const maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
-
-    // If at first → go to last
-    if (scroller.scrollLeft <= 0) {
-      scroller.scrollTo({ left: maxScrollLeft, behavior: "smooth" });
-    } else {
-      scroller.scrollBy({ left: -cardWidth, behavior: "smooth" });
-    }
-  };
 
   // Auto-scroll ONLY on mobile + tablet
   useEffect(() => {
@@ -317,22 +303,7 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* ARROW BUTTONS */}
-          <div className="flex gap-6 mt-10">
-            <button
-              onClick={scrollPrev}
-              className="bg-black/60 border border-neutral-800 p-4 rounded-full hover:bg-black/80 transition"
-            >
-              <ChevronLeft size={22} className="text-white" />
-            </button>
-
-            <button
-              onClick={scrollNext}
-              className="bg-black/60 border border-neutral-800 p-4 rounded-full hover:bg-black/80 transition"
-            >
-              <ChevronRight size={22} className="text-white" />
-            </button>
-          </div>
+        
 
           {/* PAGINATION DOTS */}
           <div className="flex gap-3 mt-6">
