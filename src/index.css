@@ -177,3 +177,21 @@ body {
 }
 
 
+/* Hide horizontal scrollbar cleanly */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.project-card {
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
+}

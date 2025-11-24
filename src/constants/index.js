@@ -3,7 +3,7 @@ export const myProjects = [
     id: 1,
     title: "Real Time Chat Application",
     description:
-      "A modern real-time chat application built with the MERN stack, providing secure, fast, and customizable communication with an elegant UI powered by TailwindCSS and DaisyUI.",
+      "A modern real-time chat application, providing secure, fast, and customizable communication with an elegant UI.",
     subDescription: [
       "💬 Instant messaging with Socket.io for seamless real-time conversations",
       "🖼️ Photo sharing with Cloudinary integration for reliable image storage and delivery",
@@ -52,7 +52,7 @@ export const myProjects = [
     id: 2,
     title: "E-Commerce Shopping Application",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "a full-featured e-commerce website",
     subDescription: [
       "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
       "Implemented role-based access control (RBAC) for fine-grained user permissions.",
@@ -79,11 +79,7 @@ export const myProjects = [
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
-       {
-        id: 4,
-        name: "Node.js",
-        path: "/assets/logos/Node.js.svg",
-      },
+      
     ],
   },
 
@@ -94,7 +90,7 @@ export const myProjects = [
     id: 3,
 title: "Prescripto - Nearest Doctor Appointment Booking System",
 description:
-  "A full-stack MERN application that makes booking a doctor's appointment as easy as booking a cab, with real-time location-based search and role-based access.",
+  "A geo-enabled application that helps users identify doctors around them.",
 subDescription: [
   "⚛️ Developed a React frontend with Tailwind CSS, enabling patients to log in, search doctors, and book appointments.",
   "🔐 Implemented JWT-based secure authentication and role-based access for patients, doctors, and admins.",
@@ -144,7 +140,7 @@ subDescription: [
     id: 1,
     title: "My Portfolio",
     description:
-      "A modern real-time chat application built with the MERN stack, providing secure, fast, and customizable communication with an elegant UI powered by TailwindCSS and DaisyUI.",
+      "My personal portfolio website.",
     subDescription: [
       "💬 Instant messaging with Socket.io for seamless real-time conversations",
       "🖼️ Photo sharing with Cloudinary integration for reliable image storage and delivery",
@@ -179,16 +175,7 @@ subDescription: [
 
 
 export const mySocials = [
-  {
-    name: "Github",
-    href: "https://github.com/SomiyaRana",
-    icon: "/assets/logos/github.svg",
-  },
-  {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/somiya-rana-b35152255/",
-    icon: "/socials/linkedIn.svg",
-  },
+  
   {
     name: "Instagram",
     href: "https://www.instagram.com/som.yayaya/",

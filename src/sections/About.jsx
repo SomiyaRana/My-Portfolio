@@ -3,9 +3,8 @@ import React, { useRef } from "react";
 import Card from "../components/Card";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks.jsx";
-import { Particles } from "../components/Particles";
+// import { Particles } from "../components/Particles";
 import { motion } from "framer-motion";
-
 
 const containerVariants = {
   animate: {
@@ -62,13 +61,13 @@ const About = () => {
           className="grid-1 tilt-hover relative p-6 rounded-3xl overflow-hidden md:col-span-2 md:row-span-2"
           variants={cardFromLeft}
         >
-          <Particles
+          {/* <Particles
             className="absolute inset-0 -z-50"
             quantity={100}
             ease={80}
             color={"#ffffff"}
             refresh
-          />
+          /> */}
           <div className="flex items-start space-x-6">
             <div className="relative flex-shrink-0">
               <img
@@ -85,15 +84,40 @@ const About = () => {
 
               <div className="grid grid-cols-1 gap-y-1 text-sm text-gray-400">
                 <div className="flex items-center space-x-2">
-                  <span role="img" aria-label="University">
-                    🎓
-                  </span>
+                  <img
+                    src="/assets/university.png"
+                    alt="Resume icon"
+                    className="w-5 h-5 opacity-70"
+                  />
                   <span>Dr. A. P. J. Abdul Kalam Technical University</span>
-                  
                 </div>
-              
+
+                {/* Resume Row */}
+                <div className="flex items-center space-x-2 mt-2">
+                  <img
+                    src="/assets/resume.png"
+                    alt="Resume icon"
+                    className="w-5 h-5 opacity-70"
+                  />
+
+                  <span className="text-sm text-gray-400">Resume</span>
+
+                  <a
+                    href="/assets/deloitte_webdev.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 group"
+                  >
+                    <span className="text-sm text-gray-500 group-hover:text-gray-300 transition">
+                      View
+                    </span>
+
+                    <span className="text-gray-500 group-hover:text-gray-300 transition-transform duration-300 group-hover:translate-x-[2px]">
+                      ↗
+                    </span>
+                  </a>
+                </div>
               </div>
-             
             </div>
           </div>
 
@@ -121,11 +145,11 @@ const About = () => {
                 className="flex items-center space-x-4 text-gray hover:text-blue-400 transition-colors duration-300 group"
               >
                 <img
-                  src="socials/linkedIn.svg"
+                  src="socials/linkedin.png"
                   alt="LinkedIn"
                   className="w-6 h-6 group-hover:scale-105 transition-transform"
                 />
-                
+
                 <span className="text-lg ">SomiyaRana</span>
                 <span className="ml-auto text-gray group-hover:text-blue-400">
                   ↗
@@ -139,11 +163,11 @@ const About = () => {
                 className="flex items-center space-x-4 text-white hover:text-purple-400 transition-colors duration-300 group"
               >
                 <img
-                  src="assets/logos/github.svg"
+                  src="assets/logos/social.png"
                   alt="GitHub"
                   className="w-6 h-6 group-hover:scale-105 transition-transform"
                 />
-                <span className="text-lg">Somiya09</span>
+                <span className="text-lg ">Somiya09</span>
                 <span className="ml-auto text-gray-00 group-hover:text-purple-400">
                   ↗
                 </span>
@@ -191,7 +215,6 @@ const About = () => {
               text="UI/UX"
               containerRef={grid2Container}
             />
-   
           </div>
         </motion.div>
 

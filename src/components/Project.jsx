@@ -5,6 +5,7 @@ const Project = ({ title, description, subDescription, href, image, tags ,setPre
   const [isHidden, setIsHidden] = useState(false);
   return (
     <>
+    
       <div className="flex-wrap items-center py-10 justify-between space-y-14 sm:-space-y-0" onMouseEnter={()=>setPreview(image)}
         onMouseLeave={()=>setPreview(null)}
         >
