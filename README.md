@@ -45,13 +45,5 @@ It includes sections for:
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SomiyaRana)  
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:somyarana819@gmail.com)
 
----
-
-## 📌 Contact
-- 📍 Meerut, Uttar Pradesh, India  
-- 📧 Email: somyarana819@gmail.com  
-- 📱 Phone: +91 9634606128  
-
----
 
 **“Code is like humor. When you have to explain it, it's bad.” – Cory House**
