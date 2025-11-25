@@ -37,13 +37,4 @@ It includes sections for:
 - **Contact form** integrated for direct communication  
 - Clean and **modern UI/UX**  
 
-
----
-
-## 🌐 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/somiya-rana-b35152255/)  
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SomiyaRana)  
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:somyarana819@gmail.com)
-
-
 **“Code is like humor. When you have to explain it, it's bad.” – Cory House**
