@@ -25,7 +25,7 @@ It includes sections for:
 ---
 
 ## 🛠️ Technologies Used
-- **Frontend:** React, Tailwind CSS
+- **Frontend:** React, Tailwind CSS, ThreeJS
 - **Hosting / Deployment:** Vercel  
 
 
