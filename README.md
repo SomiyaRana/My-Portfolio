@@ -12,7 +12,7 @@ Check out my portfolio here: [**My Portfolio Live**](https://somiya911.vercel.ap
 
 ## 🚀 About This Project
 This project is a **personal portfolio website** built to demonstrate:
-- Skills in **React, Tailwind CSS**  
+- Skills in **React, Tailwind CSS, ThreeJS**
 - Responsive and interactive **frontend design**  
 
 
